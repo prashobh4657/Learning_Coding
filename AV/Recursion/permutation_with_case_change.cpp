@@ -1,35 +1,34 @@
-/* i did this question without seeing video fully , only i see a glimpse of video to understand actual question and i did it 100%correct*/
-//now i have seen video and verified that whatever did is correct by me
-  
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-void solve(string ip, string op)
+#define int long long int
+#define mod 1000000007
+#define endl "\n"
+#define fio                           \
+    ios_base::sync_with_stdio(false); \
+    cin.tie(NULL);
+
+void solve(int idx, string curr, string &s, vector<string> &v)
 {
-    if(ip.length()==0)
+    if (idx == s.size())
     {
-         cout<<op<<endl;
-          return;
+        v.push_back(curr);
+        return;
     }
-    string op1=op;
-    string op2=op;
-
-    op1.push_back(ip[0]);
-    op2.push_back(ip[0]-32); //alter  op2.push_back(toupper(ip[0]));
-
-    ip.erase(ip.begin()+0);
-    
-    solve(ip,op1);
-    solve(ip,op2);
+    curr.push_back(tolower(s[idx]));
+    solve(idx + 1, curr, s, v); // Take lower-case;
+    curr.pop_back();            // backtrack;
+    curr.push_back(toupper(s[idx]));
+    solve(idx + 1, curr, s, v); // Take upper-case;
 }
-void solve1(string s)
+int32_t main()
 {
-    string ip=s;
-    string op="";
-    solve(s,op);
-}
-int main()
-{   string s;
-      cin>>s;
-    solve1(s);
+    fio;
+    string s;
+    cin >> s;
+    vector<string> v;
+    string curr;
+    solve(0, curr, s, v);
+    for (int i = 0; i < v.size(); i++)
+        cout << v[i] << endl;
     return 0;
 }
