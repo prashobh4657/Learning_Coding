@@ -1,4 +1,3 @@
-
 /*
  input : n
   let n=2
@@ -52,7 +51,6 @@
     Now next time (for 2nd box) we have two choices
     either we can use again open bracket
     or using close bracket .
-
 
 
       This below tree is not complete
