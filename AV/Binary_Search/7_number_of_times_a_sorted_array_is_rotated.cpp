@@ -5,6 +5,8 @@ let given array is
  after 4 times
  11 12 15 18 2 5 6 8..........arr2
 
+
+
 now in question we are given only arr2
 clearly observation in sorted array (arr1) minimum element is present at index 0 while in rotated sorted array (arr2) minimum element
 is present at index 4
