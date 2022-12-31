@@ -46,7 +46,7 @@ we need,
 
 // Here just read below :
 /*  See this question :  https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
-    and directly see this submission  : 03/15/2022 15:50	Accepted
+    ==> See submission  : 03/15/2022 15:50	Accepted
 
 
  Some important points regarding this problem:
@@ -81,23 +81,17 @@ we need,
       Here, left half with mid included and right half with mid included both are sorted.
       Hence that algorithm fails as it required one half should be unsorted.
 
-    
     See this question : https://practice.geeksforgeeks.org/problems/rotation4723/1/# 
-     ==> See this submission : 2021-07-21 07:41:16	Correct  (Minimum element found using linear search)
-
-     ==> See this submission : 2022-03-15 16:15:55	Correct  (Minimum element found using binary search)
+     ==> See submission : 2021-07-21 07:41:16	Correct  (Minimum element found using linear search)
+     ==> See submission : 2022-03-15 16:15:55	Correct  (Minimum element found using binary search)
          --> Important points regarding this submission
               ->Full leetcode function is copy pasted in count function
               ->Do these 3 changes in return statements: 
-                    1. return nums[0] ==> 0
-                    2. return nums[mid]==>return mid
-                    3. return nums[low]==>return low
+                    1. return nums[0] ==> 0, 2. return nums[mid]==>return mid, 3. return nums[low]==>return low
                 Because in gfg question index of minimum elements is asked while in leetcode question minimum elements is asked.
 */
 
 /*
-==> This problem has lot of glitches (also the exact code which aditya verma told also not getting submit on gfg and leetcode also
-    hence just follow above points).
-    Hence don't worry much about it.
-
+This problem has lot of glitches (also the exact code which aditya verma told also not getting submit on gfg and leetcode also hence just follow above points).
+Hence don't worry much about it.
 */
