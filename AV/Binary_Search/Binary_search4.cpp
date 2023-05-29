@@ -1,7 +1,7 @@
 /* Order agnostic search */
 /* Given an array (sorted).
    It may be sorted in ascending or descending.
-   */
+*/
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -21,11 +21,7 @@ int search(int a[],int n,int key)
     {
         descending_binary_serach(a,n,key); // refer video 3 for this function
     }
-
-
-
 }
-
 int main()
 {
     int arr[]={10,23,45,66};
