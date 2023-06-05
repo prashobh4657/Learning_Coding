@@ -6,7 +6,7 @@ using namespace std;
 #define fio                           \
     ios_base::sync_with_stdio(false); \
     cin.tie(NULL);
-vector<pair<int, int>> NGL(vector<int> arr, int n)
+vector<pair<int, int>> NGL(vector<int> &arr, int n)
 {
     vector<pair<int, int>> v;
     stack<pair<int, int>> st; // (NGL value , index of that NGL value)
