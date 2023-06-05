@@ -7,7 +7,7 @@ using namespace std;
 #define fio                           \
     ios_base::sync_with_stdio(false); \
     cin.tie(NULL);
-vector<int> NSR(vector<int> arr, int n)
+vector<int> NSR(vector<int> &arr, int n)
 {
     vector<int> v;
     stack<int> st;
