@@ -8,7 +8,7 @@ using namespace std;
     ios_base::sync_with_stdio(false); \
     cin.tie(NULL);
 
-vector<int> NSL(vector<int> arr, int n)
+vector<int> NSL(vector<int> &arr, int n)
 {
     vector<int> v;
     stack<int> st;
