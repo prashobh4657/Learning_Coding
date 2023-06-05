@@ -7,7 +7,7 @@ using namespace std;
     ios_base::sync_with_stdio(false); \
     cin.tie(NULL);
 
-vector<pair<int, int>> NSR(vector<int> arr, int n)
+vector<pair<int, int>> NSR(vector<int> &arr, int n)
 {
     vector<pair<int, int>> v;
     stack<pair<int, int>> st;
@@ -33,7 +33,7 @@ vector<pair<int, int>> NSR(vector<int> arr, int n)
     return v;
 }
 
-vector<pair<int, int>> NSL(vector<int> arr, int n)
+vector<pair<int, int>> NSL(vector<int> &arr, int n)
 {
     vector<pair<int, int>> v;
     stack<pair<int, int>> st;
@@ -57,7 +57,7 @@ vector<pair<int, int>> NSL(vector<int> arr, int n)
     }
     return v;
 }
-int MAH(vector<int> a)
+int MAH(vector<int> &a)
 {
     vector<pair<int, int>> nsr = NSR(a, a.size());
     vector<pair<int, int>> nsl = NSL(a, a.size());
