@@ -7,7 +7,7 @@ using namespace std;
     ios_base::sync_with_stdio(false); \
     cin.tie(NULL);
 
-vector<int> NGR(vector<int> arr, int n) // Nearest Greater to Right
+vector<int> NGR(vector<int> &arr, int n) // Nearest Greater to Right
 {
     vector<int> v;
     stack<int> st;
