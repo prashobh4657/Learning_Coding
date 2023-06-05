@@ -11,7 +11,7 @@ using namespace std;
 // To prevent checking : NGR/NSR exist or not we can give proper corresponding index so that we can get correct answer;
 // In case NSL or NGL : If for any a[i] it's NGL or NSL is -1 then take its corresponding index also -1;
 // In case NGR or NSR : If for any a[i] it's NGR or NSR is -1 then take its corresponding index as n;
-vector<pair<int, int>> NSR(vector<int> arr, int n)
+vector<pair<int, int>> NSR(vector<int> &arr, int n)
 {
     vector<pair<int, int>> v;
     stack<pair<int, int>> st;
@@ -37,7 +37,7 @@ vector<pair<int, int>> NSR(vector<int> arr, int n)
     return v;
 }
 
-vector<pair<int, int>> NSL(vector<int> arr, int n)
+vector<pair<int, int>> NSL(vector<int> &arr, int n)
 {
     vector<pair<int, int>> v;
     stack<pair<int, int>> st;
@@ -61,7 +61,7 @@ vector<pair<int, int>> NSL(vector<int> arr, int n)
     }
     return v;
 }
-int MAH(vector<int> a)
+int MAH(vector<int> &a)
 {
     vector<pair<int, int>> nsr = NSR(a, a.size());
     vector<pair<int, int>> nsl = NSL(a, a.size());
