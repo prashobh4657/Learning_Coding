@@ -5,10 +5,4 @@
 ../.DS_Store
 bits/
 .cph/
-../../.DS_Store
-../.DS_Store
-.DS_Store
-*/.DS_Store
-*/*/.DS_Store
-../../.DS_Store
-../.DS_Store
+*.bin
