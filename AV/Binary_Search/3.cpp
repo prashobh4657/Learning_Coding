@@ -1,7 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
-int search(int a[], int n, int key)
+
+int search(vector<int> &a, int key)
 {
+    int n = a.size();
     int low = 0;
     int high = n - 1;
     while (low < high)
@@ -18,8 +20,14 @@ int search(int a[], int n, int key)
 }
 int main()
 {
-    int a[] = {45, 33, 29, 14, 15};
-    cout << search(a, sizeof(a) / sizeof(a[0]), 29);
+    int n;
+    cin >> n;
+    vector<int> a(n);
+    for (int i = 0; i < n; i++)
+        cin >> a[i];
+    int key;
+    cin >> key;
+    cout << search(a, key);
     return 0;
 }
 /* Given an array in descending order (reverse sorted)  and key to search*/
