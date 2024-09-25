@@ -1,6 +1,3 @@
-/* Determine first occurence of a element in sorted array return its index .
-   For e.g. 2 4 10 10 10 18 20, key=10, ans =2; */
-
 #include <bits/stdc++.h>
 using namespace std;
 int first_occurrence(vector<int> a, int key)
@@ -61,6 +58,10 @@ int main()
     cout << last_occurrence(a, key) << endl;
     return 0;
 }
+
+/* Determine first occurence of a element in sorted array return its index .
+   For e.g. 2 4 10 10 10 18 20, key=10, ans =2; */
+
 /*
 My solution : See function first_occurrence(),last_occurrence();
     ==> I thought by myself completely this code.
